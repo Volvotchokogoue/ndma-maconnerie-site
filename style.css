@@ -1,0 +1,8 @@
+/* Reset de base : les navigateurs appliquent des styles
+   par défaut différents (marges, tailles...). On repart
+   d'une base neutre commune à tous. */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
