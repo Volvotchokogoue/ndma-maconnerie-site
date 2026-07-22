@@ -1,3 +1,15 @@
+/* Palette de couleurs centralisée. Si on veut changer une teinte
+   plus tard, on modifie UNE seule ligne ici plutôt que de chercher
+   partout dans le fichier. */
+:root {
+  --charcoal: #24211d;   /* noir chantier, pour le header et les fonds sombres */
+  --stone: #ece7dd;      /* teinte pierre claire, pour les fonds de section */
+  --mortar: #8c8577;     /* gris mortier, pour le texte secondaire */
+  --brick: #b3492f;      /* brique/terre cuite, couleur d'accent */
+  --safety: #e8a93c;     /* jaune sécurité, couleur d'action (boutons, liens actifs) */
+  --white: #fffaf2;
+}
+
 /* Reset de base : les navigateurs appliquent des styles
    par défaut différents (marges, tailles...). On repart
    d'une base neutre commune à tous. */
@@ -5,4 +17,41 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--charcoal);
+}
+
+header {
+  background-color: var(--charcoal);
+  color: var(--white);
+  padding: 20px 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--safety);
 }

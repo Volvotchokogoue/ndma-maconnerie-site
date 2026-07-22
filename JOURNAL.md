@@ -16,6 +16,7 @@ Du 17/07/2026 au 14/08/2026
 - Création du dépôt GitHub `ndma-maconnerie-site`
 - Initialisation du projet en local, premier commit
 - Squelette HTML de base (`<head>`, `<body>`, structure minimale)
+- Reset CSS de base 
 
 **Difficultés rencontrées :**
 - Installation de VScode et documentation sur HTML5
